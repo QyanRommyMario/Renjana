@@ -1,67 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <h1> RENJANA </h1>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemberitahuan</title>
-    <link rel="stylesheet" href="halUtama.css">
+    <title>pemberitahuan</title>
+    <link rel="stylesheet" href="pemberitahuan.css">
 </head>
 <body>
     <header>
         <h2 class="logo">RENJANA</h2>
-        <div class="logout">
-            <a href="login.html" class="btn-logout">
+        <dix class="logout">
+            <form action="login.html">
+            <button class="btn-logout">
                 <img src="icon/exit.png">
                 <span class="btn-text">Log Out</span>
-            </a>
+            </button>
+        </form>
         </div>
     </header>
     <div class="sidebar">
-        <a href="halUtama.html" class="btn-halaman-utama">
-            <img src="icon/home (1).png">
+        <form action="halUtama.html">
+        <button class="btn-halaman-utama">
+            <img src="icon/home.png">
             <span class="halaman-utama">Halaman Utama</span>
-        </a>
-    
-        <a href="profil.html" class="btn-profil">
+        </button>
+    </form>
+    <form action="profil.html">
+        <button class="btn-profil">
             <img src="icon/user.png">
             <span class="profil">Profil</span>
-        </a>
-    
-        <a href="pemberitahuan.html" class="btn-pemberitahuan">
-            <img src="icon/ringing.png">
+        </button>
+    </form>
+        <button class="btn-pemberitahuan">
+            <img src="icon/ringing (2).png">
             <span class="pemberitahuan">Pemberitahuan</span>
-        </a>
-    
-        <a href="presensi.html" class="btn-presensi">
+        </button>
+        <form action="presensi.html">
+        <button class="btn-presensi">
             <img src="icon/clipboard (1).png">
             <span class="presensi">Presensi</span>
-        </a>
-    
-        <a href="jadwalkuliah.html" class="btn-jadwal-kuliah">
+        </button>
+    </form>
+        <button class="btn-jadwal-kuliah">
             <img src="icon/calendar.png">
             <span class="jadwal-kuliah">Jadwal Kuliah</span>
-        </a>
-    
-        <a href="tugas.html" class="btn-tugas">
+        </button>
+        <button class="btn-tugas">
             <img src="icon/notes.png">
             <span class="tugas">Tugas</span>
-        </a>
-    
-        <a href="konsultasi.html" class="btn-konsultasi">
+        </button>
+        <button class="btn-konsultasi">
             <img src="icon/chat.png">
             <span class="konsultasi">Konsultasi</span>
-        </a>
-    
-        <a href="rekaphasilstudi.html" class="btn-rhs">
+        </button>
+        <button class="btn-rhs">
             <img src="icon/grade.png">
             <span class="rhs">Rekap Hasil Studi</span>
-        </a>
-    
-        <a href="biayakuliah.html" class="btn-biaya-kuliah">
+        </button>
+        <button class="btn-biaya-kuliah">
             <img src="icon/credit-card.png">
             <span class="biaya-kuliah">Biaya Kuliah</span>
-        </a>
+        </button>
+    </div>
+    <div class="title-text">
+        <span>Pemberitahuan</span>
+        <div class="pemisah"></div>
+    </div>
+    <div class="notif">
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="pertama" checked>
+                <label for="pertama">Pemberitahuan 1</label>
+                <div class="content">
+                    <p>In this video we are going to make a Collapsibles / Accordion in neumorphism style. In this Accordion we will not 
+                        use any JavaScript, there will be only HTML and CSS. When the Accordion is open you will see a (-) icon here and 
+                        once it is close you will see a (+) icon. By default the fist accordion is open, when we will open another 
+                        accordion to see their content, then the other accordion will get closed. Be will make this beautiful neumorphism 
+                        design accordion using HTML and CSS, without any JavaScript.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="kedua">
+                <label for="kedua">Pemberitahuan 2</label>
+                <div class="content">
+                    <p>In this video we are going to make a Collapsibles / Accordion in neumorphism style. In this Accordion we will not 
+                        use any JavaScript, there will be only HTML and CSS. When the Accordion is open you will see a (-) icon here and 
+                        once it is close you will see a (+) icon. By default the fist accordion is open, when we will open another 
+                        accordion to see their content, then the other accordion will get closed. Be will make this beautiful neumorphism 
+                        design accordion using HTML and CSS, without any JavaScript.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="ketiga">
+                <label for="ketiga">Pemberitahuan 3</label>
+                <div class="content">
+                    <p>In this video we are going to make a Collapsibles / Accordion in neumorphism style. In this Accordion we will not 
+                        use any JavaScript, there will be only HTML and CSS. When the Accordion is open you will see a (-) icon here and 
+                        once it is close you will see a (+) icon. By default the fist accordion is open, when we will open another 
+                        accordion to see their content, then the other accordion will get closed. Be will make this beautiful neumorphism 
+                        design accordion using HTML and CSS, without any JavaScript.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="keempat">
+                <label for="keempat">Pemberitahuan 4</label>
+                <div class="content">
+                    <p>tes</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="kelima">
+                <label for="kelima">Pemberitahuan 5</label>
+                <div class="content">
+                    <p>tes</p>
+                </div>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
