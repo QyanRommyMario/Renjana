@@ -60,7 +60,6 @@
     padding: 80px 50px;
     background: rgba(37,45,58,255);
   }
-
   .sidebar .btn-halaman-utama{
     top: 80px;
     left: 0px;
@@ -107,6 +106,10 @@
     flex-shrink: 1;
     background: none;
     border: none;
+    transition: 0.4s ease;
+  }
+  .btn-profil:hover{
+    background: #005580;
   }
   .btn-profil .profil{
     top: 20px;
@@ -142,6 +145,10 @@
     flex-shrink: 1;
     background: none;
     border: none;
+    transition: 0.4s ease;
+  }
+  .btn-pemberitahuan:hover{
+    background: #005580;
   }
   .btn-pemberitahuan .pemberitahuan{
     top: 20px;
@@ -177,6 +184,10 @@
     flex-shrink: 1;
     background: none;
     border: none;
+    transition: 0.4s ease;
+  }
+  .btn-presensi:hover{
+    background: #005580;
   }
   .btn-presensi .presensi{
     top: 20px;
@@ -212,6 +223,10 @@
     flex-shrink: 1;
     background: none;
     border: none;
+    transition: 0.4s ease;
+  }
+  .btn-jadwal-kuliah:hover{
+    background: #005580;
   }
   .btn-jadwal-kuliah .jadwal-kuliah{
     top: 20px;
@@ -247,6 +262,10 @@
     flex-shrink: 1;
     background: none;
     border: none;
+    transition: 0.4s ease;
+  }
+  .btn-tugas:hover{
+    background: #005580;
   }
   .btn-tugas .tugas{
     top: 20px;
@@ -282,6 +301,10 @@
     flex-shrink: 1;
     background: none;
     border: none;
+    transition: 0.4s ease;
+  }
+  .btn-konsultasi:hover{
+    background: #005580;
   }
   .btn-konsultasi .konsultasi{
     top: 20px;
@@ -317,6 +340,10 @@
     flex-shrink: 1;
     background: none;
     border: none;
+    transition: 0.4s ease;
+  }
+  .btn-rhs:hover{
+    background: #005580;
   }
   .btn-rhs .rhs{
     top: 20px;
@@ -352,6 +379,10 @@
     flex-shrink: 1;
     background: none;
     border: none;
+    transition: 0.4s ease;
+  }
+  .btn-biaya-kuliah:hover{
+    background: #005580;
   }
   .btn-biaya-kuliah .biaya-kuliah{
     top: 20px;
@@ -376,7 +407,7 @@
     position: absolute;
   }
 
-  .sambutan-text{
+  .title-text{
     top: 135px;
     left: 400px;
     color: #252d3a;
@@ -386,11 +417,11 @@
     font-style: Regular;
     text-align: left;
     font-family: Ubisoft Sans;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     font-stretch: normal;
     text-decoration: none;
-    width: 940px;
+    width: 1030px;
   }
 
   .pemisah{
@@ -415,11 +446,12 @@
     border-radius: 25px;
     border: none;
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    transition: transform 0.3s ease-in-out;
   }
   .profil-cnt{
     top: 125px;
     left: 73px;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(37,45,58,255);
     height: auto;
     position: absolute;
     font-size: 25px;
@@ -445,10 +477,19 @@
     height: 86px;
     position: absolute;
   }
+  .btn-profil-cnt:hover .user-biru{
+    animation: shake 0.5s;
+    transform: scale(1.1) rotate(-5deg);
+  }
+  @keyframes shake {
+    0% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
 
-  .btn-pemberitahuan-cnt{
+.btn-pemberitahuan-cnt{
     top: 220px;
-    left: 646px;
+    left: 680px;
     width: 200px;
     height: 200px;
     display: flex;
@@ -459,11 +500,12 @@
     border-radius: 25px;
     border: none;
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    transition: transform 0.3s ease-in-out;
   }
   .pemberitahuan-cnt{
     top: 125px;
     left: 17px;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(37,45,58,255);
     height: auto;
     position: absolute;
     font-size: 25px;
@@ -489,10 +531,19 @@
     height: 86px;
     position: absolute;
   }
+  .btn-pemberitahuan-cnt:hover .ringing-biru{
+    animation: shake 0.5s;
+    transform: scale(1.1) rotate(-5deg);
+  }
+  @keyframes shake {
+    0% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
 
   .btn-presensi-cnt{
     top: 220px;
-    left: 892px;
+    left: 955px;
     width: 200px;
     height: 200px;
     display: flex;
@@ -503,11 +554,12 @@
     border-radius: 25px;
     border: none;
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    transition: transform 0.3s ease-in-out;
   }
   .presensi-cnt{
     top: 125px;
     left: 56px;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(37,45,58,255);
     height: auto;
     position: absolute;
     font-size: 25px;
@@ -533,10 +585,19 @@
     height: 86px;
     position: absolute;
   }
+  .btn-presensi-cnt:hover .clipboard-biru{
+    animation: shake 0.5s;
+    transform: scale(1.1) rotate(-5deg);
+  }
+  @keyframes shake {
+    0% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
 
   .btn-jadwal-kuliah-cnt{
     top: 220px;
-    left: 1140px;
+    left: 1230px;
     width: 200px;
     height: 200px;
     display: flex;
@@ -547,11 +608,12 @@
     border-radius: 25px;
     border: none;
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    transition: transform 0.3s ease-in-out;
   }
   .jadwal-kuliah-cnt{
     top: 125px;
     left: 25px;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(37,45,58,255);
     height: auto;
     position: absolute;
     font-size: 25px;
@@ -577,6 +639,15 @@
     height: 86px;
     position: absolute;
   }
+  .btn-jadwal-kuliah-cnt:hover .calendar-biru{
+    animation: shake 0.5s;
+    transform: scale(1.1) rotate(-5deg);
+  }
+  @keyframes shake {
+    0% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
 
   .btn-tugas-cnt{
     top: 480px;
@@ -591,11 +662,12 @@
     border-radius: 25px;
     border: none;
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    transition: transform 0.3s ease-in-out;
   }
   .tugas-cnt{
     top: 125px;
     left: 67px;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(37,45,58,255);
     height: auto;
     position: absolute;
     font-size: 25px;
@@ -621,10 +693,19 @@
     height: 86px;
     position: absolute;
   }
+  .btn-tugas-cnt:hover .note-biru{
+    animation: shake 0.5s;
+    transform: scale(1.1) rotate(-5deg);
+  }
+  @keyframes shake {
+    0% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
 
   .btn-konsultasi-cnt{
     top: 480px;
-    left: 646px;
+    left: 680px;
     width: 200px;
     height: 200px;
     display: flex;
@@ -635,11 +716,12 @@
     border-radius: 25px;
     border: none;
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    transition: transform 0.3s ease-in-out;
   }
   .konsultasi-cnt{
     top: 125px;
     left: 45px;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(37,45,58,255);
     height: auto;
     position: absolute;
     font-size: 25px;
@@ -665,10 +747,19 @@
     height: 86px;
     position: absolute;
   }
+  .btn-konsultasi-cnt:hover .chat-biru{
+    animation: shake 0.5s;
+    transform: scale(1.1) rotate(-5deg);
+  }
+  @keyframes shake {
+    0% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
 
   .btn-rhs-cnt{
     top: 480px;
-    left: 892px;
+    left: 955px;
     width: 200px;
     height: 200px;
     display: flex;
@@ -679,11 +770,12 @@
     border-radius: 25px;
     border: none;
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    transition: transform 0.3s ease-in-out;
   }
   .rhs-cnt{
     top: 125px;
     left: 8px;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(37,45,58,255);
     height: auto;
     position: absolute;
     font-size: 25px;
@@ -709,10 +801,19 @@
     height: 86px;
     position: absolute;
   }
+  .btn-rhs-cnt:hover .grade-biru{
+    animation: shake 0.5s;
+    transform: scale(1.1) rotate(-5deg);
+  }
+  @keyframes shake {
+    0% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
 
   .btn-biaya-kuliah-cnt{
     top: 480px;
-    left: 1140px;
+    left: 1230px;
     width: 200px;
     height: 200px;
     display: flex;
@@ -723,11 +824,12 @@
     border-radius: 25px;
     border: none;
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    transition: transform 0.3s ease-in-out;
   }
   .biaya-kuliah-cnt{
     top: 125px;
     left: 34px;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(37,45,58,255);
     height: auto;
     position: absolute;
     font-size: 25px;
@@ -753,3 +855,12 @@
     height: 86px;
     position: absolute;
   }
+  .btn-biaya-kuliah-cnt:hover .card-biru{
+    animation: shake 0.5s;
+    transform: scale(1.1) rotate(-5deg);
+  }
+  @keyframes shake {
+    0% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
