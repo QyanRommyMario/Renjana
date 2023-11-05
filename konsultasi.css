@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background: linear-gradient(90deg, #edf0fb 31px, transparent 1px) 50%, linear-gradient(180deg, #edf0fb 31px, #335DFF 1px) 50%;
+    background-size: 32px 32px;
+    color: #222;
+  }
+
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 20px 50px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+  }
+
+  .logo{
+    font-size: 36px;
+    color: #252d3a;
+    font-family: Ubisoft Sans;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .logout .btn-logout{
+    background: transparent;
+    width: 105px;
+    height: 25px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-logout .btn-text{
+      font-family: Ubisoft Sans;
+      font-size: 20px;
+      font-weight: 400;
+      width: 400px;
+  }
+  .btn-logout img{
+    width: 23px;
+    height: 23px;
+  }
+
+  .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    padding: 80px 50px;
+    background: rgba(37,45,58,255);
+  }
+
+  .sidebar .btn-halaman-utama{
+    top: 80px;
+    left: 0px;
+    width: 300px;
+    height: 80px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+    transition: 0.4s ease;
+  }
+  .btn-halaman-utama:hover{
+    background: #005580;
+  }
+  .btn-halaman-utama .halaman-utama{
+    top: 40px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-halaman-utama img{
+    top: 40px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-profil{
+    top: 160px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+    transition: 0.4s ease;
+  }
+  .btn-profil:hover{
+    background: #005580;
+  }
+  .btn-profil .profil{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-profil img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-pemberitahuan{
+    top: 220px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+    transition: 0.4s ease;
+  }
+  .btn-pemberitahuan:hover{
+    background: #005580;
+  }
+  .btn-pemberitahuan .pemberitahuan{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-pemberitahuan img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-presensi{
+    top: 280px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+    transition: 0.4s ease;
+  }
+  .btn-presensi:hover{
+    background: #005580;
+  }
+  .btn-presensi .presensi{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-presensi img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-jadwal-kuliah{
+    top: 340px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+    transition: 0.4s ease;
+  }
+  .btn-jadwal-kuliah:hover{
+    background: #005580;
+  }
+  .btn-jadwal-kuliah .jadwal-kuliah{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-jadwal-kuliah img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-tugas{
+    top: 400px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+    transition: 0.4s ease;
+  }
+  .btn-tugas:hover{
+    background: #005580;
+  }
+  .btn-tugas .tugas{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-tugas img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-konsultasi{
+    top: 460px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: #0e151d;
+    border: none;
+  }
+  .btn-konsultasi .konsultasi{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-konsultasi img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-rhs{
+    top: 520px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+    transition: 0.4s ease;
+  }
+  .btn-rhs:hover{
+    background: #005580;
+  }
+  .btn-rhs .rhs{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-rhs img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-biaya-kuliah{
+    top: 580px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+    transition: 0.4s ease;
+  }
+  .btn-biaya-kuliah:hover{
+    background: #005580;
+  }
+  .btn-biaya-kuliah .biaya-kuliah{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-biaya-kuliah img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .container {
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    width: 1210px;
+    height: auto;
+    align-items: center;
+    display: flex;
+  }
+  
+  .chatbox-wrapper {
+    position: fixed;
+    padding: 20px 20px;
+    bottom: 0; 
+    width: 1235px; 
+    height: auto; 
+  }
+
+.chatbox-message-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: rgba(0,135,204,255);
+	padding: .75rem 1.5rem;
+  position: fixed;
+  top: 100px;
+  width: 1195px;
+  border-radius: 25px 25px 0 0;
+  font-family: Ubisoft Sans;
+}
+.chatbox-message-profile {
+	display: flex;
+	align-items: center;
+	grid-gap: .5rem;
+}
+.chatbox-message-image {
+	width: 3rem;
+	height: 3rem;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.chatbox-message-name {
+	font-size: 1.125rem;
+	font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+}
+.chatbox-message-status {
+	font-size: .875rem;
+	color: rgba(255, 255, 255, 1);
+}
+
+.chatbox-message-content {
+	background: #F5F5F5;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	grid-row-gap: 1rem;
+	height: 535px;
+	overflow-y: auto;
+  font-family: Ubisoft Sans;
+}
+.chatbox-message-item {
+	width: 90%;
+	padding: 1rem;
+}
+.chatbox-message-item.sent {
+	align-self: flex-end;
+	background: #335DFF;
+	color: #FFF;
+	border-radius: .75rem 0 .75rem .75rem;
+}
+.chatbox-message-item.received {
+	background: #FFF;
+	border-radius: 0 .75rem .75rem .75rem;
+	box-shadow: .25rem .25rem 1.5rem rgba(0, 0, 0, .05);
+}
+.chatbox-message-item-time {
+	float: right;
+	font-size: .75rem;
+	margin-top: .5rem;
+	display: inline-block;
+}
+.chatbox-message-bottom {
+	background: #FFF;
+	padding: .75rem 1.5rem;
+  border-radius: 0 0 25px 25px;
+}
+.chatbox-message-form {
+	display: flex;
+	align-items: center;
+  justify-content: space-between;
+	background: #F5F5F5;
+	border-radius: .5rem;
+	padding: .5rem 1.25rem;
+}
+.chatbox-message-input {
+	background: transparent;
+	outline: none;
+	border: none;
+	resize: none;
+	scrollbar-width: none;
+  width: 100%;
+  font-family: Ubisoft Sans;
+  font-size: 16px;
+}
+.chatbox-message-input::-webkit-scrollbar {
+	display: none;
+}
+.chatbox-message-submit {
+	font-size: 1.25rem;
+	color: #335DFF;
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.chatbox-message-no-message {
+	font-size: 1rem;
+	font-weight: 600;
+	text-align: center;
+}
