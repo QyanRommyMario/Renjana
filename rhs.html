@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presensi</title>
+    <link rel="stylesheet" href="rhs.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">RENJANA</h1>
+        <div class="logout">
+            <form action="login.html">
+            <button class="btn-logout">
+                <img src="icon/exit.png">
+                <span class="btn-text">Log Out</span>
+            </button>
+        </form>
+        </div>
+    </header>
+    <div class="sidebar">
+    <form action="halUtama.html">
+        <button class="btn-halaman-utama">
+            <img src="icon/home.png">
+            <span class="halaman-utama">Halaman Utama</span>
+        </button>
+    </form>
+    <form action="profil.html">
+        <button class="btn-profil">
+            <img src="icon/user.png">
+            <span class="profil">Profil</span>
+        </button>
+    </form>
+    <form action="pemberitahuan.html">
+        <button class="btn-pemberitahuan">
+            <img src="icon/ringing.png">
+            <span class="pemberitahuan">Pemberitahuan</span>
+        </button>
+    </form>
+    <form action="presensi.html">
+        <button class="btn-presensi">
+            <img src="icon/clipboard (1).png">
+            <span class="presensi">Presensi</span>
+        </button>
+    </form>
+    <form action="jadwalKuliah.html">
+        <button class="btn-jadwal-kuliah">
+            <img src="icon/calendar.png">
+            <span class="jadwal-kuliah">Jadwal Kuliah</span>
+        </button>
+    </form>
+    <form action="tugas.html">
+        <button class="btn-tugas">
+            <img src="icon/notes.png">
+            <span class="tugas">Tugas</span>
+        </button>
+    </form>
+    <form action="konsultasi.html">
+        <button class="btn-konsultasi">
+            <img src="icon/chat.png">
+            <span class="konsultasi">Konsultasi</span>
+        </button>
+    </form>
+        <button class="btn-rhs">
+            <img src="icon/grade (1).png">
+            <span class="rhs">Rekap Hasil Studi</span>
+        </button>
+        <form action="biayaKuliah.html">
+        <button class="btn-biaya-kuliah">
+            <img src="icon/credit-card.png">
+            <span class="biaya-kuliah">Biaya Kuliah</span>
+        </button>
+    </form>
+    </div>
+    <div class="container">
+    <div class="title-text">
+        <span>Rekap Hasil Studi</span>
+        <div class="pemisah1"></div>
+    </div>
+    <div class="thn-akademik">
+        <tr>
+            <td>Tahun Akademik</td>
+            <td>: </td>
+        </tr>
+    </div>
+    <div class="semester">
+        <tr>
+            <td>Semester</td>
+            <td>: </td>
+        </tr>
+    </div>
+    <div class="pemisah2"></div>
+    <table class="tabel-rhs">
+        <tr>
+            <th>No</th>
+            <th>Kode MK</th>
+            <th>Nama MK</th>
+            <th>sks</th>
+            <th>nilai</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>12345</td>
+            <td>Interaksi Manusia dan Komputer</td>
+            <td>3</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>54321</td>
+            <td>Kalkulus</td>
+            <td>3</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>67890</td>
+            <td>Statistika</td>
+            <td>3</td>
+            <td>C+</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>09876</td>
+            <td>Pemrograman Dasar</td>
+            <td>4</td>
+            <td>B+</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>28134</td>
+            <td>Matematika Dasar</td>
+            <td>3</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>34123</td>
+            <td>Fisika Dasar</td>
+            <td>3</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>62144</td>
+            <td>Bahasa Inggris</td>
+            <td>2</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>74574</td>
+            <td>Machine Learning</td>
+            <td>4</td>
+            <td>A</td>
+        </tr>
+    </table>
+    <div class="dropdown-thn-akademik">
+        <div class="select">
+            <span class="selected">2023/2024</span>
+            <div class="caret"></div>
+        </div>
+        <ul class="menu">
+            <li class="active">2023/2024</li>
+            <li>2022/2023</li>
+            <li>2021/2022</li>
+            <li>2020/2021</li>
+            <li>2019/2020</li>
+            <li>2018/2019</li>
+        </ul>
+    </div>
+    <div class="dropdown-semester">
+        <div class="select">
+            <span class="selected">Ganjil</span>
+            <div class="caret"></div>
+        </div>
+        <ul class="menu">
+            <li class="active">Ganjil</li>
+            <li>Genap</li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="dropdown.js"></script>
+</html>

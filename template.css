@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background: #edf0fb;
+  }
+
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 20px 50px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+  }
+
+  .logo{
+    font-size: 36px;
+    color: #252d3a;
+    font-family: Ubisoft Sans;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .logout .btn-logout{
+    background: transparent;
+    width: 105px;
+    height: 25px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-logout .btn-text{
+      font-family: Ubisoft Sans;
+      font-size: 20px;
+      font-weight: 400;
+      width: 400px;
+  }
+  .btn-logout img{
+    width: 23px;
+    height: 23px;
+  }
+
+  .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    padding: 80px 50px;
+    background: rgba(37,45,58,255);
+  }
+
+  .sidebar .btn-halaman-utama{
+    top: 80px;
+    left: 0px;
+    width: 300px;
+    height: 80px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+  }
+  .btn-halaman-utama .halaman-utama{
+    top: 40px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-halaman-utama img{
+    top: 40px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-profil{
+    top: 160px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+  }
+  .btn-profil .profil{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-profil img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-pemberitahuan{
+    top: 220px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+  }
+  .btn-pemberitahuan .pemberitahuan{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-pemberitahuan img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-presensi{
+    top: 280px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+  }
+  .btn-presensi .presensi{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-presensi img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-jadwal-kuliah{
+    top: 340px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+  }
+  .btn-jadwal-kuliah .jadwal-kuliah{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-jadwal-kuliah img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-tugas{
+    top: 400px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+  }
+  .btn-tugas .tugas{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-tugas img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-konsultasi{
+    top: 460px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+  }
+  .btn-konsultasi .konsultasi{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-konsultasi img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-rhs{
+    top: 520px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+  }
+  .btn-rhs .rhs{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-rhs img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }
+
+  .sidebar .btn-biaya-kuliah{
+    top: 580px;
+    left: 0px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background: none;
+    border: none;
+  }
+  .btn-biaya-kuliah .biaya-kuliah{
+    top: 20px;
+    left: 90px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .btn-biaya-kuliah img{
+    top: 20px;
+    left: 55px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+  }

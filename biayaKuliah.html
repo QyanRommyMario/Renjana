@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biaya Kuliah</title>
+    <link rel="stylesheet" href="biayaKuliah.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">RENJANA</h1>
+        <div class="logout">
+            <form action="login.html">
+            <button class="btn-logout">
+                <img src="icon/exit.png">
+                <span class="btn-text">Log Out</span>
+            </button>
+        </form>
+        </div>
+    </header>
+    <div class="sidebar">
+    <form action="halUtama.html">
+        <button class="btn-halaman-utama">
+            <img src="icon/home.png">
+            <span class="halaman-utama">Halaman Utama</span>
+        </button>
+    </form>
+    <form action="profil.html">
+        <button class="btn-profil">
+            <img src="icon/user.png">
+            <span class="profil">Profil</span>
+        </button>
+    </form>
+    <form action="pemberitahuan.html">
+        <button class="btn-pemberitahuan">
+            <img src="icon/ringing.png">
+            <span class="pemberitahuan">Pemberitahuan</span>
+        </button>
+    </form>
+    <form action="presensi.html">
+        <button class="btn-presensi">
+            <img src="icon/clipboard (1).png">
+            <span class="presensi">Presensi</span>
+        </button>
+    </form>
+    <form action="jadwalKuliah.html">
+        <button class="btn-jadwal-kuliah">
+            <img src="icon/calendar.png">
+            <span class="jadwal-kuliah">Jadwal Kuliah</span>
+        </button>
+    </form>
+    <form action="tugas.html">
+        <button class="btn-tugas">
+            <img src="icon/notes.png">
+            <span class="tugas">Tugas</span>
+        </button>
+    </form>
+    <form action="konsultasi.html">
+        <button class="btn-konsultasi">
+            <img src="icon/chat.png">
+            <span class="konsultasi">Konsultasi</span>
+        </button>
+    </form>
+        <form action="rhs.html">
+        <button class="btn-rhs">
+            <img src="icon/grade.png">
+            <span class="rhs">Rekap Hasil Studi</span>
+        </button>
+    </form>
+        <button class="btn-biaya-kuliah">
+            <img src="icon/credit-card (2).png">
+            <span class="biaya-kuliah">Biaya Kuliah</span>
+        </button>
+    </div>
+    <div class="container">
+    <div class="title-text">
+        <span>Biaya Kuliah</span>
+        <div class="pemisah1"></div>
+    </div>
+    <div class="thn-akademik">
+        <tr>
+            <td>Tahun Akademik</td>
+            <td>: </td>
+        </tr>
+    </div>
+    <div class="semester">
+        <tr>
+            <td>Semester</td>
+            <td>: </td>
+        </tr>
+    </div>
+    <div class="pemisah2"></div>
+    <table class="tabel-biaya">
+        <tr>
+            <th>No</th>
+            <th>Total bayar</th>
+            <th>sudah dibayar</th>
+            <th>sisa tagihan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Rp10.000.000</td>
+            <td>Rp10.000.000</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Rp99.000.000.</td>
+            <td>Rp100.000.000</td>
+            <td>Rp1.000.000</td>
+        </tr>
+    </table>
+    <div class="dropdown-thn-akademik">
+        <div class="select">
+            <span class="selected">2023/2024</span>
+            <div class="caret"></div>
+        </div>
+        <ul class="menu">
+            <li class="active">2023/2024</li>
+            <li>2022/2023</li>
+            <li>2021/2022</li>
+            <li>2020/2021</li>
+            <li>2019/2020</li>
+            <li>2018/2019</li>
+        </ul>
+    </div>
+    <div class="dropdown-semester">
+        <div class="select">
+            <span class="selected">Ganjil</span>
+            <div class="caret"></div>
+        </div>
+        <ul class="menu">
+            <li class="active">Ganjil</li>
+            <li>Genap</li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="dropdown.js"></script>
+</html>
